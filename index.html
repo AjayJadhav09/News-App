@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-bar flex container">  
+        <a href="#" class="compony-logo" onclick="reload()" > <img src="/News web app/Assets/logo.png" alt="News web App" ></a>
+        <div class="links">
+            <ul class="flex">
+                <li class="hover-link nav-items" id="Genral" onclick="onNavItemClick('Genral')">Genral</li>
+                <li class="hover-link nav-items" id="wrestling" onclick="onNavItemClick('wrestling')">wrestling</li>
+                <li class="hover-link nav-items" id="Science" onclick="onNavItemClick('Science')">Science</li>
+                <li class="hover-link nav-items" id="Sports" onclick="onNavItemClick('Sports')">Sports</li>
+                <li class="hover-link nav-items" id="Technology" onclick="onNavItemClick('Technology')">Technology</li>
+            </ul>
+        </div>
+
+        <div class="search-bar flex">
+            <input type="search" name="search" id="search-box" placeholder="e.g. Science">
+            <button id="search-button" class="search-button">Search</button>
+        </div>
+
+    </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+           
+    </main>
+
+    <template class="template-card" id="template-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="dsdds.jpg" alt="news-image" id="news-image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">Title</h3>
+                <h6 class="news-source" id="news-source">Source</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati maiores qui recusandae ab eos voluptatibus, unde repudiandae cumque illo consequatur quo libero distinctio voluptatum officiis debitis, vero veniam. Rem, optio!</p>
+            </div>
+        </div>
+    </div>    
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
